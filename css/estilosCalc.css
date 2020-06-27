@@ -1,12 +1,14 @@
 html {
-    background: linear-gradient(to bottom, #45484D 0%, #000000 100%);
+    /* background: linear-gradient(to bottom, #45484D 0%, #000000 100%); */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);    
     background-repeat: no-repeat;   
     height: 100%; 
-}
+} 
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #fff;
+    color: #F5F4DC;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .calculator {
@@ -14,6 +16,7 @@ h1 {
     height: 475px;
     background-color: #282927;
     margin: 0 auto;
+    margin-top: 120px;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #000;
@@ -36,7 +39,7 @@ h1 {
     border-top: 1px solid #5d5d5c;
 }
 
-.btn {
+.boton {
     background-color: #5d5d5c;
     width: 75px;
     height: 75px;
@@ -49,29 +52,29 @@ h1 {
     border-bottom: 1px solid #000;
 }
 
-.btn-double {
+.boton-double {
     width: 150px;
     text-align: left;
     padding-left: 30px;
 }
 
-.btn-dark {
+.boton-dark {
     background-color: #3c3d3c;    
 }
 
-.btn-orange {
+.boton-orange {
     background-color: #ff940e;
 }
 
-.btn:nth-child(4n),
-.btn:last-child {
+.boton:nth-child(4n),
+.boton:last-child {
     border-right: 0;
 }
 
-.btn:focus {
+.boton:focus {
     outline: none;
 } 
 
-.btn:active {
+.boton:active {
     opacity: 0.5;
 }
